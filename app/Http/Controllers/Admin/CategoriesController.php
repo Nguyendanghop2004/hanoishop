@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use App\Models\Categories;
 use Illuminate\Http\Request;
-use Storage;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class CategoriesController extends Controller
 {
@@ -65,7 +65,7 @@ public function store(Request $request)
 
     $imagePath = $request->file('image_path')->store('categories', 'public');
 
-    Categories::creat([
+    Categories::create([
         'name' => $request->name,
         'slug' => $request->slug,
         'description' => $request->description,
