@@ -1,0 +1,94 @@
+@extends('admin.layouts.master')
+
+@section('content')
+    <section class="section">
+        <div class="section-header">
+            <h1>Slider</h1>
+        </div>
+
+        <div class="card card-primary">
+            <div class="card-header d-flex justify-content-between">
+                <h4>Image Check</h4>
+
+                <button class="btn btn-danger">Delete image</button>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label class="form-label">Image Check</label>
+                    <div class="row gutters-sm">
+                        <div class="col-6 col-sm-3">
+                            <label class="imagecheck mb-4">
+                                <input name="imagecheck" type="checkbox" value="1" class="imagecheck-input" />
+                                <figure class="imagecheck-figure">
+                                    <img src="{{ asset('admin/assets/img/news/img01.jpg') }}" alt="}"
+                                        class="imagecheck-image">
+                                </figure>
+                            </label>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                            <label class="imagecheck mb-4">
+                                <input name="imagecheck" type="checkbox" value="2" class="imagecheck-input" checked />
+                                <figure class="imagecheck-figure">
+                                    <img src="{{ asset('admin/assets/img/news/img02.jpg') }}" alt="}"
+                                        class="imagecheck-image">
+                                </figure>
+                            </label>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                            <label class="imagecheck mb-4">
+                                <input name="imagecheck" type="checkbox" value="3" class="imagecheck-input" />
+                                <figure class="imagecheck-figure">
+                                    <img src="{{ asset('admin/assets/img/news/img03.jpg') }}" alt="}"
+                                        class="imagecheck-image">
+                                </figure>
+                            </label>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                            <label class="imagecheck mb-4">
+                                <input name="imagecheck" type="checkbox" value="4" class="imagecheck-input" checked />
+                                <figure class="imagecheck-figure">
+                                    <img src="{{ asset('admin/assets/img/news/img04.jpg') }}" alt="}"
+                                        class="imagecheck-image">
+                                </figure>
+                            </label>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                            <label class="imagecheck mb-4">
+                                <input name="imagecheck" type="checkbox" value="5" class="imagecheck-input" />
+                                <figure class="imagecheck-figure">
+                                    <img src="{{ asset('admin/assets/img/news/img05.jpg') }}" alt="}"
+                                        class="imagecheck-image">
+                                </figure>
+                            </label>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                            <label class="imagecheck mb-4">
+                                <input name="imagecheck" type="checkbox" value="6" class="imagecheck-input" />
+                                <figure class="imagecheck-figure">
+                                    <img src="{{ asset('admin/assets/img/news/img06.jpg') }}" alt="}"
+                                        class="imagecheck-image">
+                                </figure>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card card-primary">
+            <div class="card-header d-flex justify-content-between">
+                <h4>Image Check</h4>
+                <button class="btn btn-primary ">Insert image</button>
+            </div>
+            <div class="card-body ">
+                <form action="#" class="dropzone" id="mydropzone">
+                    <div class="fallback">
+                        <input name="file" type="file" multiple />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+@endsection
